@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'hi/index'#, controller: 'hi_controller', action: :index
+  resources :posts
+  resources :users
+  #get 'hi/index'#, controller: 'hi_controller', action: :index
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
